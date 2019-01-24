@@ -3,8 +3,8 @@
 ## 1. __Rezolvare diacritice și corectare toponime__.
 
 1. Înlocuire `ş` cu `ș`    
-2. 1b. Înlocuire 
-3. 1c. Eliminare cratime la despărțirea în silabe, dacă e cazul:
+2. Înlocuire ...
+3. Eliminare cratime la despărțirea în silabe, dacă e cazul:
     înlocuire `-([a-zșțăîâ])` cu `$1`
 
 ## 2. __Îmbunătățire formatare__
@@ -18,12 +18,25 @@
 ## 3. __Pregătire formatare nouă__
 
 1. Eliminăm rîndurile noi:  
-        înlocuiește `$` cu `blanc` (_un spațiu_)  
+    înlocuiește `$` cu `blanc` (_un spațiu_)  
 2. Formatare tip tabel:  
-        înlocuiește `([a-zA-ZȘȚÎăîâșț-]+) (D\. K\. .*?km\.)` cu `\n$1\t$2\t`  
+    înlocuiește `([a-zA-ZȘȚÎăîâșț-]+) (D\. K\. .*?km\.)` cu `\n$1\t$2\t`  
 3. Tab-uri noi:  
-        înlocuiește `(\(.*?\))` cu `\t$1\n\t`  
-4. Tab dublu pe liniile începînd cu _nr. 2_:  
-        înlocuiește `^\t` cu `\t\t\t`  
+    înlocuiește `(\(.*?\))` cu `\t$1\n\t`  
+4. Tab triplu pe liniile începînd cu _nr. 2_:  
+    înlocuiește `^\t` cu `\t\t\t`  
 5. Steluța (semnul de reședință) pe coloană proprie:  
-        înlocuiește ` (\*)` cu `$1\t`
+    înlocuiește ` (\*)` cu `$1\t`
+6. Dacă satul reședință nu e primul în listă, va rămîne un tab în plus, care trebuie eliminat:  
+    înlocuiește `^\t\t\t(\*)` cu `\t\t$1`
+7. În comuna unde satul de la numărul 1 nu e reședința, trebuie adăugat un tab în fața lui 1:  
+    înlocuiește ` 1\.` cu `\t 1.`
+7. Eliminăm rîndurile goale:  
+    înlocuiește `^\t\t\t $` cu nimic  
+    înlocuiește `^\t\t\t$` cu nimic  
+    înlocuiește `^$` cu nimic
+
+## 4. __Verificare rezultat__
+
+După curățare, documentul ar trebui să arate astfel:
+[foto](imag/pag_2.png)
