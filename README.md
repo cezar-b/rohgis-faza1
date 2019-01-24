@@ -4,7 +4,7 @@
 
 1. Înlocuire `ş` cu `ș`    
 2. Înlocuire ...
-3. Eliminare cratime la despărțirea în silabe, dacă e cazul:
+3. Eliminare cratime la despărțirea în silabe, dacă e cazul:  
     înlocuire `-([a-zșțăîâ])` cu `$1`
 
 ## 2. __Îmbunătățire formatare__
@@ -38,5 +38,6 @@
 
 ## 4. __Verificare rezultat__
 
-După curățare, documentul ar trebui să arate astfel:
-[foto](imag/pag_2.png)
+După curățare, documentul ar trebui să arate astfel:  
+
+![foto](https://github.com/Cezar92/rohgis-faza1/blob/master/imag/pag_2.png)
