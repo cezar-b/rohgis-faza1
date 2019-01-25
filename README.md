@@ -3,9 +3,12 @@
 ## 1. __Rezolvare diacritice și corectare toponime__.
 
 1. Înlocuire `ş` cu `ș`    
-2. Înlocuire ...
-3. Eliminare cratime la despărțirea în silabe, dacă e cazul:  
-    înlocuire `-([a-zșțăîâ])` cu `$1`
+2. Înlocuire `ţ` cu `ț`
+3. Înlocuire `Ş` cu `Ș`
+3. Înlocuire `Ţ` cu `Ț`
+4. Eliminare cratime la despărțirea în silabe, dacă e cazul:  
+    înlocuire `-([a-zșțăîâ])` cu `$1`  
+    dar atenție la toponimele de forma Satu-de-sus, unde cratimele sunt corecte.
 
 ## 2. __Îmbunătățire formatare__
 
@@ -21,6 +24,7 @@
     înlocuiește `$` cu `blanc` (_un spațiu_)  
 2. Formatare tip tabel:  
     înlocuiește `([a-zA-ZȘȚÎăîâșț-]+) (D\. K\. .*?km\.)` cu `\n$1\t$2\t`  
+    _dacă comuna e reședință de plasă, în expresia de căutare se mai introduce un `\*`_
 3. Tab-uri noi:  
     înlocuiește `(\(.*?\))` cu `\t$1\n\t`  
 4. Tab triplu pe liniile începînd cu _nr. 2_:  
