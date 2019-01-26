@@ -5,17 +5,18 @@
 1. Înlocuire `ş` cu `ș`    
 2. Înlocuire `ţ` cu `ț`
 3. Înlocuire `Ş` cu `Ș`
-3. Înlocuire `Ţ` cu `Ț`
-4. Eliminare cratime la despărțirea în silabe, dacă e cazul:  
+4. Înlocuire `Ţ` cu `Ț`
+5. Eliminarea rîndului `Totalul comunei`, dacă există.
+6. Eliminare cratime la despărțirea în silabe, dacă e cazul:  
     înlocuire `-([a-zșțăîâ])` cu `$1`  
-    dar atenție la toponimele de forma Satu-de-sus, unde cratimele sunt corecte.
+    dar atenție la toponimele de forma _Satu-de-sus_, unde cratimele sunt corecte.
 
 ## 2. __Îmbunătățire formatare__
 
 1. Elimină tab-uri inițiale: 
     înlocuiește `\t` cu `blanc` (_un spațiu_)
-2. Eliminăm rîndurile cu informații suplimentare:
-    înlocuiește `^A\..*` cu nimic; se repetă și se adaptează în caz că există linii care încep cu altă literă
+2. Eliminăm rîndurile cu informații suplimentare:  
+    înlocuiește `^A\..*` cu nimic; se repetă și se adaptează în caz că există linii care încep cu altă literă  
     înlocuiește `^$` cu nimic
 
 ## 3. __Pregătire formatare nouă__
