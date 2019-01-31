@@ -15,13 +15,13 @@
 
 1. Elimină tab-uri inițiale: 
     înlocuiește `\t` cu `blanc` (_un spațiu_)
-2. Eliminăm rîndurile cu informații suplimentare:  
+2. Elimină rîndurile cu informații suplimentare:  
     înlocuiește `^A\..*` cu nimic; se repetă și se adaptează în caz că există linii care încep cu altă literă  
     înlocuiește `^$` cu nimic
 
 ## 3. __Pregătire formatare nouă__
 
-1. Eliminăm rîndurile noi:  
+1. Elimină rîndurile noi:  
     înlocuiește `$` cu `blanc` (_un spațiu_)  
 2. Formatare tip tabel:  
     înlocuiește `([a-zA-ZȘȚÎăîâșț-]+) (D\. K\. .*?km\.)` cu `\n$1\t$2\t`  
@@ -35,8 +35,8 @@
 6. Dacă satul reședință nu e primul în listă, va rămîne un tab în plus, care trebuie eliminat:  
     înlocuiește `^\t\t\t(\*)` cu `\t\t$1`
 7. În comuna unde satul de la numărul 1 nu e reședința, trebuie adăugat un tab în fața lui 1:  
-    înlocuiește ` 1\.` cu `\t 1.`
-7. Eliminăm rîndurile goale:  
+    înlocuiește ` 1\.` cu `\t 1.` (_atenție la spații suplimentare!_)
+7. Elimină rîndurile goale:  
     înlocuiește `^\t\t\t $` cu nimic  
     înlocuiește `^\t\t\t$` cu nimic  
     înlocuiește `^$` cu nimic
