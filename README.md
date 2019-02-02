@@ -59,6 +59,10 @@ După curățare, documentul ar trebui să arate astfel:
 3. Eliminare cratimă și introducerea valorii zero:  
     înlocuire `—` cu `0`
 
+4. Verificați dacă există rînduri cu mai mult de cinci numere:  
+    `[0-9]+ [0-9]+ [0-9]+ [0-9]+ [0-9]+`  
+    dacă da, atunci verificați cu paginile scanate și corectați manual.
+
 ## 2. __Executarea script-ului__
 
 1. Se pregătesc fișierele conform situației stabilite.
