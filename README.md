@@ -59,23 +59,15 @@ După curățare, documentul ar trebui să arate astfel:
 3. Eliminare cratimă și introducerea valorii zero:  
     înlocuire `—` cu `0`
 
-4. Verificați dacă există rînduri cu mai mult de cinci numere:  
+4. Verifică dacă există rînduri cu mai mult de cinci numere:  
     `[0-9]+ [0-9]+ [0-9]+ [0-9]+ [0-9]+`  
     dacă da, atunci verificați cu paginile scanate și corectați manual.
+
+5. Verifică să nu apară litere sau alte simboluri în loc de cifre sau în plus.
 
 5. Atenție ca nu cumva ultima linie să fie goală:  
     înlocuiește `^$` cu nimic
 
-## 2. __Executarea script-ului__
+6. Înlocuire `blanc` (_un spațiu_) cu `\t`
 
-1. Se pregătesc fișierele conform situației stabilite.
-2. Se rulează script-ul.
-
-## 3. __Pregătire date__
-
-1. Înlocuire `,` cu `\n`  
-
-2. Înlocuire `blanc` (_un spațiu_) cu `\t`
-
-3. Elimină eventualele rînduri goale:  
-    înlocuiește `^$` cu nimic
+7. Copiază blocul de numere lîngă lista finalizată în partea I.
