@@ -63,6 +63,9 @@ După curățare, documentul ar trebui să arate astfel:
     `[0-9]+ [0-9]+ [0-9]+ [0-9]+ [0-9]+`  
     dacă da, atunci verificați cu paginile scanate și corectați manual.
 
+5. Atenție ca nu cumva ultima linie să fie goală:  
+    înlocuiește `^$` cu nimic
+
 ## 2. __Executarea script-ului__
 
 1. Se pregătesc fișierele conform situației stabilite.
@@ -73,3 +76,6 @@ După curățare, documentul ar trebui să arate astfel:
 1. Înlocuire `,` cu `\n`  
 
 2. Înlocuire `blanc` (_un spațiu_) cu `\t`
+
+3. Elimină eventualele rînduri goale:  
+    înlocuiește `^$` cu nimic
