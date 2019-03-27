@@ -12,25 +12,23 @@
 
 ### 2. __Îmbunătățire formatare sate__
 
-1. **se copiază textul din Writer în Calc ca _text neformatat_.**   
-2. **se șterge coloana cu cătune**  
-3. **se lipește la loc în Writer ca text neformatat**  
-4. ștergem numerele comunelor: înlocuire `^[0-9]+.*?\t` cu nimic.
-5. înlocuire `([2-9]+)` cu `\n\t$1`; se va adapta pentru comunele care au mai mult de nouă sate.
-6. șterge spațiul de la final de rînd: înlocuiește ` $` cu nimic.
-7. înlocuire `\*$` cu `\t reședință`
-8. **se copiază textul din Writer în Calc ca _text neformatat_**.  
-9. se adaugă în Calc o nouă coloană numită `statut`, unde se completează cuvîntul `sat` pentru fiecare rînd.
+1. **se șterge coloana cu cătune**  
+2. **se lipește la loc în Writer ca text neformatat**  
+3. ștergem numerele comunelor: înlocuire `^[0-9]+.*? ` cu nimic.
+4. înlocuire `([2-9]+)` cu `\n\t$1`; se va adapta pentru comunele care au mai mult de nouă sate.
+5. șterge spațiul de la final de rînd: înlocuiește ` $` cu nimic.
+6. înlocuire `\*$` cu `\t reședință`
+7. **se copiază textul din Writer în Calc ca _text neformatat_**.  
+8. se adaugă în Calc o nouă coloană numită `statut`, unde se completează cuvîntul `sat` pentru fiecare rînd.
 
 ### 3. __Îmbunătățire formatare cătune__
 
-1. **se copiază textul din Writer în Calc ca _text neformatat_.**   
-2. **se șterge coloana cu sate**  
-3. **se lipește la loc în Writer ca text neformatat**  
-4. ștergem numerele comunelor: înlocuire `^[0-9]+.*?\t` cu nimic.
-5. înlocuire `([2-9]+)` cu `\n\t$1`
-6. șterge spațiul de la final de rînd: înlocuiește ` $` cu nimic.
-7. înlocuire `\*$` cu `\t reședință`, dacă e cazul.
-8. **se copiază textul din Writer în Calc ca _text neformatat_, într-un tab nou, alături de cel cu sate**.  
-9. se adaugă în Calc o nouă coloană numită `statut`, unde se completează cuvîntul `cătun` pentru fiecare rînd.
-10. ștergem rîndurile cu comune care nu au cătune.
+1. **se șterge coloana cu sate**  
+2. **se lipește la loc în Writer ca text neformatat**  
+3. ștergem numerele comunelor: înlocuire `^[0-9]+.*? ` cu nimic.
+4. înlocuire `([2-9]+)` cu `\n\t$1`
+5. șterge spațiul de la final de rînd: înlocuiește ` $` cu nimic.
+6. înlocuire `\*$` cu `\t reședință`, dacă e cazul.
+7. **se copiază textul din Writer în Calc ca _text neformatat_, într-un tab nou, alături de cel cu sate**.  
+8. se adaugă în Calc o nouă coloană numită `statut`, unde se completează cuvîntul `cătun` pentru fiecare rînd.
+9. ștergem rîndurile cu comune care nu au cătune.
